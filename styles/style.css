@@ -1,0 +1,298 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fffffe;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    gap: 25px;
+}
+  
+.nav-list-item {
+    margin: 0 10px
+}
+  
+.nav-link {
+    padding: 5px;
+    color: #094067;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 13%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+  
+.nav-link:hover {
+    color: #fffffe;
+    background-color: #3da9fc;
+    border-radius: 13%;
+}
+
+  /* home */
+.home {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #094067;
+}
+
+.home-img {
+    flex: 1;
+}
+
+.home-img img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.home-content {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.home-content h2 {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+/* project */
+.header-card {
+    text-align: center;
+    color: #094067;
+    font-size: 35px;
+    margin-top: 90px;
+    margin-bottom: -100px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 60px;
+    background-color: #d8eefe;
+    margin: 30px;
+    padding-top: 60px;
+    border-radius: 10px;
+}
+  
+.card {
+    background-color: #fffffe;
+    color: #094067;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+}
+  
+.card h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+  
+.card p {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* about */
+
+.header-about {
+    text-align: center;
+    color: #094067;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: -20px;
+}
+
+.about {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #094067;
+}
+
+
+.about-content {
+    flex: 2;
+    padding: 20px;
+    padding-top: 35px;
+    border-radius: 3%;
+    background-color: #094067;
+    color: #fffffe;
+}
+
+.about-content h2 {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.about-content p {
+    font-size: 20px;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    max-width: 80%;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #ef4565;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fffffe;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-list {
+      gap: 25px;
+    }
+
+    .home {
+        flex-direction: row;
+      }
+    
+    .home-img {
+        margin-right: 20px;
+    }
+
+    .header-card {
+        font-size: 45px;
+        margin-top: 120px;
+        margin-bottom: -120px;
+    }
+    
+    .project {
+        gap: 80px;
+        margin: 50px;
+        padding-top: 80px;
+    }
+    
+    .card {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .card h2 {
+        font-size: 35px;
+    }
+    
+    .card p {
+        font-size: 24px;
+    }
+
+    .header-about {
+        font-size: 50px;
+        margin-top: 100px;
+        margin-bottom: -30px;
+    }
+    
+    .about {
+        margin: 60px;
+    }
+    
+    .about-img {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .nav-list {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .nav-link {
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .home {
+        flex-direction: row;
+      }
+    
+    .home-img {
+        margin-right: 20px;
+    }
+
+    .header-card {
+        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: -60px;
+    }
+    
+    .project {
+        display: block;
+        height: auto;
+        margin: 20px;
+        padding-top: 40px;
+    }
+    
+    .card {
+        width: 90%;
+        height: auto;
+        max-width: 350px;
+        margin: 10px auto;
+    }
+    
+    .card h2 {
+        font-size: 28px;
+    }
+    
+    .card p {
+        font-size: 18px;
+    }
+
+    .header-about {
+        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: -10px;
+      }
+    
+    .about {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    
+    .about-img img {
+        margin: 0 auto; 
+    }
+}
